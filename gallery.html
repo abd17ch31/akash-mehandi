@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mehndi Design Gallery | Akash Bridal Mehndi</title>
+  <meta
+    name="description"
+    content="Explore the Akash Bridal Mehndi gallery featuring bridal, portrait, cultural, baby shower, engagement, and guest henna styles."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+  <div class="gallery-atmosphere" aria-hidden="true">
+    <span class="particle particle--1"></span>
+    <span class="particle particle--2"></span>
+    <span class="particle particle--3"></span>
+    <span class="particle particle--4"></span>
+    <span class="particle particle--5"></span>
+    <span class="particle particle--6"></span>
+  </div>
+
+  <main class="gallery-page">
+    <header class="gallery-hero">
+      <div class="mandala mandala--left" aria-hidden="true">
+        <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" stroke="currentColor" stroke-width="1">
+            <circle cx="0" cy="0" r="30" />
+            <circle cx="0" cy="0" r="52" />
+            <circle cx="0" cy="0" r="74" />
+            <circle cx="0" cy="0" r="96" />
+            <path d="M-96 0H96M0-96V96M-68 -68L68 68M68 -68L-68 68" />
+          </g>
+        </svg>
+      </div>
+
+      <div class="mandala mandala--right" aria-hidden="true">
+        <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" stroke="currentColor" stroke-width="1">
+            <circle cx="220" cy="0" r="30" />
+            <circle cx="220" cy="0" r="52" />
+            <circle cx="220" cy="0" r="74" />
+            <circle cx="220" cy="0" r="96" />
+            <path d="M124 0H316M220-96V96M152 -68L288 68M288 -68L152 68" />
+          </g>
+        </svg>
+      </div>
+
+      <div class="gallery-hero__content reveal">
+        <p class="gallery-kicker">Akash Bridal Mehndi</p>
+        <h1>Mehndi Design Gallery</h1>
+        <p class="gallery-subtitle">
+          Explore our beautiful henna designs crafted for weddings and special celebrations.
+        </p>
+        <div class="gallery-divider" aria-hidden="true">
+          <svg viewBox="0 0 520 34" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 17h160c22 0 28-9 34-9s12 9 34 9h252" fill="none" stroke="currentColor" stroke-width="1.2" />
+            <path d="M20 17h160c22 0 28 9 34 9s12-9 34-9h252" fill="none" stroke="currentColor" stroke-width="1.2" />
+            <circle cx="260" cy="17" r="4.5" fill="none" stroke="currentColor" stroke-width="1.2" />
+            <circle cx="260" cy="17" r="2" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+          <span>Swipe or Click to Explore</span>
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <section class="flip-gallery-section reveal" aria-label="Flip gallery">
+      <div class="flip-gallery" id="flipGallery">
+        <a class="gallery-card-link" id="galleryCardLink" href="#" aria-label="Open current mehndi gallery category">
+          <div class="flip-card" id="flipCard" role="img" aria-label="Bridal mehndi hands on an Indian bride">
+            <div class="card-surface top-half" id="topHalf" aria-hidden="true"></div>
+            <div class="card-surface bottom-half" id="bottomHalf" aria-hidden="true"></div>
+
+            <div class="overlay overlay-top" id="overlayTop" aria-hidden="true"></div>
+            <div class="overlay overlay-bottom" id="overlayBottom" aria-hidden="true"></div>
+          </div>
+        </a>
+
+        <div class="gallery-title-wrap">
+          <p class="gallery-title" id="galleryTitle">Bridal</p>
+        </div>
+
+        <div class="gallery-controls">
+          <button class="gallery-button" id="prevButton" type="button" aria-label="Show previous mehndi gallery image">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 6l-6 6 6 6M21 12H9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span>Previous</span>
+          </button>
+
+          <button class="gallery-button" id="nextButton" type="button" aria-label="Show next mehndi gallery image">
+            <span>Next</span>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 6l6 6-6 6M3 12h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="gallery-modal" id="galleryModal" hidden>
+      <div class="gallery-modal__backdrop" id="galleryModalBackdrop"></div>
+      <div class="gallery-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="galleryModalTitle">
+        <button class="gallery-modal__close" id="galleryModalClose" type="button" aria-label="Close popup gallery">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </button>
+
+        <div class="gallery-modal__header">
+          <p class="gallery-modal__eyebrow">Popup Gallery</p>
+          <h2 id="galleryModalTitle">Bridal Mehndi</h2>
+          <p class="gallery-modal__subtitle" id="galleryModalSubtitle">Six signature designs from this category.</p>
+        </div>
+
+        <div class="gallery-modal__feature">
+          <img id="galleryModalFeaturedImage" src="" alt="" />
+        </div>
+
+        <div class="gallery-modal__grid" id="galleryModalGrid"></div>
+      </div>
+    </div>
+
+    <!-- Website Footer Component -->
+  </main>
+
+  <script src="gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Appointment | Akash Bridal Mehndi</title>
+  <meta
+    name="description"
+    content="Reserve your mehndi appointment with Akash Bridal Mehndi for bridal, engagement, festival, and special occasion designs."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="appointment.css" />
+</head>
+<body>
+  <div class="page-ornament" aria-hidden="true">
+    <span class="particle particle-1"></span>
+    <span class="particle particle-2"></span>
+    <span class="particle particle-3"></span>
+    <span class="particle particle-4"></span>
+    <span class="particle particle-5"></span>
+    <span class="particle particle-6"></span>
+    <span class="mehndi mehndi-left"></span>
+    <span class="mehndi mehndi-right"></span>
+  </div>
+
+  <main class="appointment-page">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="brand-name">Akash Bridal Mehndi</p>
+      <h1 id="hero-title">Book Your Mehndi Appointment</h1>
+      <p class="hero-copy">
+        Reserve your date and let us create beautiful mehndi designs for your special occasion.
+      </p>
+      <div class="hero-divider" aria-hidden="true">
+        <span></span>
+        <i></i>
+        <span></span>
+      </div>
+    </section>
+
+    <section class="form-section" aria-labelledby="appointment-title">
+      <article class="appointment-card">
+        <p class="card-kicker">Luxury Mehndi Booking</p>
+        <h2 id="appointment-title">Let&rsquo;s book your mehndi session</h2>
+        <p class="card-copy">
+          Fill out the form below and we&rsquo;ll confirm your appointment shortly.
+        </p>
+
+        <form id="appointmentForm" class="appointment-form" novalidate>
+          <div class="field-group">
+            <label for="fullName">Full Name</label>
+            <input
+              id="fullName"
+              name="fullName"
+              type="text"
+              aria-label="Full Name"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="emailAddress">Email Address</label>
+            <input
+              id="emailAddress"
+              name="emailAddress"
+              type="email"
+              aria-label="Email Address"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input
+              id="phoneNumber"
+              name="phoneNumber"
+              type="tel"
+              aria-label="Phone Number"
+              autocomplete="tel"
+              inputmode="tel"
+              required
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="eventType">Event Type</label>
+            <select id="eventType" name="eventType" aria-label="Event Type" required>
+              <option value="">Select event type</option>
+              <option value="Bridal Mehndi">Bridal Mehndi</option>
+              <option value="Engagement Mehndi">Engagement Mehndi</option>
+              <option value="Baby Shower Mehndi">Baby Shower Mehndi</option>
+              <option value="Festival Mehndi">Festival Mehndi</option>
+              <option value="Guest Mehndi">Guest Mehndi</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="eventDate">Event Date</label>
+            <input
+              id="eventDate"
+              name="eventDate"
+              type="date"
+              aria-label="Event Date"
+              required
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="cityLocation">City / Location</label>
+            <input
+              id="cityLocation"
+              name="cityLocation"
+              type="text"
+              aria-label="City or Location"
+              placeholder="Where is the event taking place?"
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="guestCount">Number of Guests</label>
+            <select id="guestCount" name="guestCount" aria-label="Number of Guests">
+              <option value="">Select guest range</option>
+              <option value="Only Bride">Only Bride</option>
+              <option value="1-5 Guests">1-5 Guests</option>
+              <option value="6-15 Guests">6-15 Guests</option>
+              <option value="15+ Guests">15+ Guests</option>
+            </select>
+          </div>
+
+          <div class="field-group field-group-full">
+            <label for="additionalMessage">Additional Message</label>
+            <textarea
+              id="additionalMessage"
+              name="additionalMessage"
+              rows="4"
+              aria-label="Additional Message"
+              placeholder="Tell us about your event or special requests..."
+            ></textarea>
+          </div>
+
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+
+          <button type="submit" class="submit-button">Book Appointment</button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <!-- Website Footer Component -->
+
+  <script src="appointment.js"></script>
+</body>
+</html>
