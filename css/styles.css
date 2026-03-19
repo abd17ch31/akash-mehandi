@@ -179,12 +179,17 @@ body {
   z-index: 999;
   transform: translateY(-10px);
   opacity: 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s linear 0.3s;
 }
 
 .mobile-drawer.open {
   transform: translateY(0);
   opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition-delay: 0s;
 }
 
 .mobile-drawer ul {
